@@ -1,0 +1,17 @@
+{
+  "name": "cp-breakfast-cli",
+  "version": "1.0.0",
+  "description": "CLI utility to launch random codeforces problem based on input range provided by the user",
+  "main": "src/index.js",
+  "bin": {
+    "cp-breakfast": "src/index.js"
+  },
+  "author": "Divyansh Gupta",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "commander": "^14.0.0",
+    "conf": "^13.1.0",
+    "open": "^10.1.2"
+  }
+}
