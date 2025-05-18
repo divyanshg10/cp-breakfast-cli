@@ -69,4 +69,3 @@ node src/index.js launch --rating 1500 1700
 ## License
 
 MIT
-```
