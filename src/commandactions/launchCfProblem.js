@@ -61,7 +61,7 @@ async function launchCfProblem({rating}) {
 
     //filter the problems using points key based on the rating range
     const filteredProblems = problems.filter(problem => {
-        const rating = problem.points;
+        const rating = problem.rating;
         return rating >= fromRating && rating <= toRating;
     });
 
