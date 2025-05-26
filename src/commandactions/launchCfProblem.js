@@ -1,4 +1,4 @@
-const {chalk, open} = require('../resolveDependencies.js');
+const {chalk, open, conf} = require('../resolveDependencies.js');
 const {getRatingsFromConfig, validateRatings} = require("../utils");
 
 function getRatings(ratings) {
@@ -47,6 +47,7 @@ function launchProblem(problem) {
     const url = `https://codeforces.com/problemset/problem/${problem.contestId}/${problem.index}`;
     console.log(chalk.green('Launching problem: ') + chalk.blue(problem.name));
     console.log(chalk.green('URL: ') + chalk.blue(url));
+    conf.set('last-problem', problem);
     // Open the URL in the default browser
     open(url);
 }

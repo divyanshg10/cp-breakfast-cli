@@ -2,6 +2,7 @@
 const {program, chalk, conf} = require('./resolveDependencies.js');
 const {launchCfProblem} = require('./commandactions/launchCfProblem.js')
 const {showConfig} = require('./commandactions/showConfig.js');
+const {showLastProblemTags} = require('./commandactions/showLastProblemTags.js');
 const {setConfig} = require('./commandactions/setConfig.js');
 const {safeFunction} = require("./utils");
 
@@ -22,6 +23,10 @@ program
 	.description('Set the ratings to filter the problem from')
 	.action(safeFunction(setConfig));
 
+program
+	.command('last-problem-tags')
+	.description('Show the tags for last problem launched')
+	.action(safeFunction(showLastProblemTags));
 
 program.parse();
 

@@ -33,6 +33,9 @@ node src/index.js <command> [options]
 - `set-config <fromRating> <toRating>`  
   Set the rating range for problem selection.
 
+- `last-problem-tags`  
+    Show tags of the last launched problem.
+
 ## Examples
 
 Set your preferred rating range:
@@ -53,6 +56,11 @@ node src/index.js launch
 Launch a problem with a custom rating range:
 ```bash
 node src/index.js launch --rating 1500 1700
+```
+
+Show tags of the last launched problem:
+```bash
+node src/index.js last-problem-tags
 ```
 
 ## Development
